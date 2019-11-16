@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import theme from '@app/App.styles';
 import '@utils/FontAwesomeWrapper';
 import { CssBaseline } from '@material-ui/core';
