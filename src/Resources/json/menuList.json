@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Dashboard",
+    "icon": "fa fa-calculator",
+    "path": "/dashboard"
+  },
+  {
+    "title": "User Profile",
+    "icon": "fa fa-user-circle",
+    "path": "/profile"
+  },
+  {
+    "title": "Table List",
+    "icon": "fa fa-clipboard",
+    "path": "/tablelist"
+  },
+  {
+    "title": "Typography",
+    "icon": "fa fa-pen",
+    "path": "/typography"
+  },
+  {
+    "title": "Icons",
+    "icon": "fa fa-icons",
+    "path": "/icons"
+  },
+  {
+    "title": "Maps",
+    "icon": "fa fa-map-marked",
+    "path": "/maps"
+  },
+  {
+    "title": "Notifications",
+    "icon": "fa fa-bell",
+    "path": "/notifications"
+  }
+]
