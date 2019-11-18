@@ -1,17 +1,21 @@
- import React from 'react';
-import theme from '@app/App.styles';
+import React, { Component } from 'react';
 import '@utils/FontAwesomeWrapper';
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Router from '@utils/Router';
+import { connect } from 'react-redux';
 
-function App() {
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router />
-    </ThemeProvider>
-  );
+class App extends Component {
+  render() {
+    return (
+      <ThemeProvider theme={this.props.theme}>
+        <CssBaseline />
+        <Router />
+      </ThemeProvider>
+    );
+  }
 }
 
-export default App;
+const mapStateToProps = theme => theme;
+
+export default connect(mapStateToProps)(App);

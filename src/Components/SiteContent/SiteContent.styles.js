@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const width = 240;
 
-export default makeStyles(theme => ({
+export default makeStyles(({
     cardContainer: {
         display: 'flex',
         flexWrap: 'wrap',

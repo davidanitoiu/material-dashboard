@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Card, CardContent, CardActions, Typography, Icon, Avatar, Link } from '@material-ui/core';
-import { material } from '@app/App.styles';
+import { material } from '@utils/ThemeGenerator';
 import Color from 'color';
 
 export default class GridCard extends Component {

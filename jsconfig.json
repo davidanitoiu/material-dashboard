@@ -8,6 +8,8 @@
         "@app/*":["./App"],
         "@styles/*":["./Styles"],
         "@utils/*":["./Utils"],
+        "@actions/*":["./Utils/Actions"],
+        "@reducers/*":["./Utils/Reducers"],
         "@pages/*":["./Pages"]
       }
     }

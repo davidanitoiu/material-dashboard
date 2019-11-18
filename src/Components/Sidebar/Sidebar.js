@@ -4,6 +4,7 @@ import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import sidebarTheme from './Sidebar.styles';
 import menuList from '@json/menuList.json';
 import { useHistory, Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
 const useStyles = makeStyles({
     drawerPaper: {
@@ -11,12 +12,12 @@ const useStyles = makeStyles({
     }
 })
 
-export default function Sidebar() {
+function Sidebar(props) {
     const classes = useStyles();
     const history = useHistory();
 
     return (
-        <ThemeProvider theme={sidebarTheme}>
+        <ThemeProvider theme={sidebarTheme(props.theme)}>
             <Drawer variant='permanent' classes={{
                 paper: classes.drawerPaper,
             }}>
@@ -44,3 +45,6 @@ export default function Sidebar() {
         </ThemeProvider >
     )
 }
+
+const mapStateToProps = theme => theme;
+export default connect(mapStateToProps)(Sidebar);

@@ -1,15 +1,14 @@
 # Description
-A basic template for dashboard layouts.
+A basic template for dashboard layouts built with ReactJS.
 
 # Tests
+```bash
+npm test
+```
 
 # Start
 ```bash
 npm start
-```
-
-```bash
-npm test
 ```
 
 # Configuration
