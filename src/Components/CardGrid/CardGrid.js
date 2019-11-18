@@ -9,7 +9,7 @@ export default function CardGrid(props) {
     return (
         <Grid className={classes.cardContainer}>
             {props.dataContent.map((card, i) => (
-                <GridCard key={i} dataContent={card} styles={classes} />
+                <GridCard key={i} dataContent={card} />
             ))}
         </Grid>
     )

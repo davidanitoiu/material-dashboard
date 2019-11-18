@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import MapChart from 'react-simple-maps';
 
 export default class Map extends Component {
     render() {
         return (
-            <React.Fragment>
-                <p>Hello World</p>
-            </React.Fragment>
+            <div style={{ width: 500, height: 500 }}>
+                <MapChart />
+            </div>
         )
     }
 };

@@ -1,10 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Fab, Icon, Menu, Typography, CardContent, Container } from '@material-ui/core';
+import { Fab, Icon, Menu, Typography, CardContent, Container, Switch } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
 import { useStyles } from './Settings.styles';
 import store from '@utils/Store';
-import { setPrimaryColor } from '@actions/ThemeColor';
+import { setPrimaryColor, setAccentColor, toggleTheme } from '@actions/ThemeColor';
 
 export const colors = ['purple', 'amber', 'red', 'blue', 'indigo', 'green'];
 
@@ -21,8 +21,16 @@ export default function Settings() {
         setAnchorEl(null);
     };
 
-    function changeColor(color) {
+    function changePrimaryColor(color) {
         store.dispatch(setPrimaryColor(color));
+    }
+
+    function changeAccentColor(color) {
+        store.dispatch(setAccentColor(color));
+    }
+
+    function switchTheme() {
+        store.dispatch(toggleTheme());
     }
 
     return (
@@ -41,11 +49,27 @@ export default function Settings() {
                 onClose={handleClose}
             >
                 <CardContent>
-                    <Typography variant="subtitle2" align="center">Theme Color</Typography>
-                    <Container style={{ display: 'inline-flex', justifyContent: 'space-around', margin: 10 }}>
-                        {colors.map((color) => (
-                            <Skeleton key={color} component="button" disableAnimate={true} variant="circle" width={24} height={24} className={clsx(classes.circle, classes[color])} onClick={changeColor.bind(this, color)} />
-                        ))}
+                    <Container>
+                        <Typography variant="subtitle2" align="center">Dark Theme</Typography>
+                        <Container style={{ display: 'inline-flex', justifyContent: 'space-around', margin: 10 }}>
+                            <Switch onChange={switchTheme} />
+                        </Container>
+                    </Container>
+                    <Container>
+                        <Typography variant="subtitle2" align="center">Theme Color</Typography>
+                        <Container style={{ display: 'inline-flex', justifyContent: 'space-around', margin: 10 }}>
+                            {colors.map((color) => (
+                                <Skeleton key={color} component="button" disableAnimate={true} variant="circle" width={24} height={24} className={clsx(classes.circle, classes[color])} onClick={changePrimaryColor.bind(this, color)} />
+                            ))}
+                        </Container>
+                    </Container>
+                    <Container>
+                        <Typography variant="subtitle2" align="center">Accent Color</Typography>
+                        <Container style={{ display: 'inline-flex', justifyContent: 'space-around', margin: 10 }}>
+                            {colors.map((color) => (
+                                <Skeleton key={color} component="button" disableAnimate={true} variant="circle" width={24} height={24} className={clsx(classes.circle, classes[color])} onClick={changeAccentColor.bind(this, color)} />
+                            ))}
+                        </Container>
                     </Container>
                 </CardContent>
             </Menu>
