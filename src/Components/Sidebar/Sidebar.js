@@ -5,6 +5,7 @@ import sidebarTheme from './Sidebar.styles';
 import menuList from '@json/menuList.json';
 import { useHistory, Link } from "react-router-dom";
 import { connect } from 'react-redux';
+import { createTheme } from '@utils/ThemeGenerator';
 
 const useStyles = makeStyles({
     drawerPaper: {
@@ -13,11 +14,12 @@ const useStyles = makeStyles({
 })
 
 function Sidebar(props) {
+    const theme = createTheme(props.themeColor);
     const classes = useStyles();
     const history = useHistory();
 
     return (
-        <ThemeProvider theme={sidebarTheme(props.theme)}>
+        <ThemeProvider theme={sidebarTheme(theme)}>
             <Drawer variant='permanent' classes={{
                 paper: classes.drawerPaper,
             }}>

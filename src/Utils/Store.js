@@ -1,4 +1,15 @@
-import { createStore } from 'redux';
-import ThemeColor, { initialState } from '@reducers/ThemeColor';
+import { createStore, combineReducers } from 'redux';
+import themeColor, { initialState as initialThemeColor } from '@reducers/ThemeColor';
+import cardContent, { initialState as initialCardContent } from '@reducers/CardContent';
 
-export default createStore(ThemeColor, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const initialState = {
+    ...initialThemeColor,
+    ...initialCardContent
+};
+
+const reducers = combineReducers({
+    cardContent,
+    themeColor
+})
+
+export default createStore(reducers, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

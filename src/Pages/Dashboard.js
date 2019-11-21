@@ -1,14 +1,18 @@
 import React from 'react';
 import SiteContent from '@components/SiteContent/SiteContent';
 import CardGrid from '@components/CardGrid/CardGrid';
-import cardContent from '@json/cardContent.json';
-import Map from '@components/Map/Map';
+import { connect } from 'react-redux';
 
-export default function Dashboard() {
+function Dashboard(props) {
     return (
         <SiteContent title="Dashboard">
-            <CardGrid dataContent={cardContent} />
-            <Map />
+            <CardGrid dataContent={props.cardContent} />
         </SiteContent>
     );
 }
+
+const mapStateToProps = state => {
+    return { cardContent: state.cardContent };
+};
+
+export default connect(mapStateToProps)(Dashboard);

@@ -21,6 +21,9 @@ export default class Router extends Component {
                 <Sidebar />
                 {this.props.children}
                 <Switch>
+                    <Route exact path="/"  >
+                        <Redirect push to='/dashboard' />
+                    </Route>
                     <Route path="/icons" component={Icons} />
                     <Route path="/maps" component={Maps} />
                     <Route path="/notifications" component={Notifications} />
@@ -28,9 +31,6 @@ export default class Router extends Component {
                     <Route path="/tableList" component={TableList} />
                     <Route path="/typography" component={Typography} />
                     <Route path="/dashboard" component={Dashboard} />
-                    <Route exact path="/"  >
-                        <Redirect push to='/dashboard' />
-                    </Route>
                 </Switch>
             </BrowserRouter>
         )
