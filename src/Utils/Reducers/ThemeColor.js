@@ -13,41 +13,23 @@ function toggleType(type) {
 }
 
 function themeReducer(state = initialState, action) {
+    const themeColor = { ...state };
     switch (action.type) {
         case SET_PRIMARY_COLOR:
-            return {
-                themeColor: {
-                    primary: action.color,
-                    accent: state.themeColor.accent,
-                    type: state.themeColor.type
-                },
-            };
+            themeColor.primary = action.color;
+            return themeColor;
         case SET_ACCENT_COLOR:
-            return {
-                themeColor: {
-                    primary: state.themeColor.primary,
-                    accent: action.color,
-                    type: state.themeColor.type
-                },
-            };
+            themeColor.accent = action.color;
+            return themeColor;
         case SET_THEME_COLOR:
-            return {
-                themeColor: {
-                    primary: action.primary,
-                    accent: action.accent,
-                    type: state.themeColor.type
-                },
-            }
+            themeColor.primary = action.primary;
+            themeColor.accent = action.accent;
+            return themeColor;
         case TOGGLE_THEME:
-            return {
-                themeColor: {
-                    primary: state.themeColor.primary,
-                    accent: state.themeColor.accent,
-                    type: toggleType(state.themeColor.type)
-                },
-            }
+            themeColor.type = toggleType(themeColor.type);
+            return themeColor;
         default:
-            return state;
+            return themeColor;
     }
 }
 
