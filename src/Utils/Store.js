@@ -1,15 +1,23 @@
-import { createStore, combineReducers } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
 import themeColor, { initialState as initialThemeColor } from '@reducers/ThemeColor';
 import cardContent, { initialState as initialCardContent } from '@reducers/CardContent';
+import { reduxBatch } from '@manaflair/redux-batch';
 
 const initialState = {
     ...initialThemeColor,
     ...initialCardContent
 };
 
-const reducers = combineReducers({
-    cardContent,
-    themeColor
+const reducer = {
+    cardContent: cardContent,
+    themeColor: themeColor
+};
+
+const store = configureStore({
+    reducer,
+    devTools: process.env.NODE_ENV !== 'production',
+    preloadedState: initialState,
+    enhancers: [reduxBatch]
 })
 
-export default createStore(reducers, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+export default store;

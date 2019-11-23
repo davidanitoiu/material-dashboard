@@ -4,7 +4,7 @@ import { Fab, Icon, Menu, Typography, CardContent, Container, Switch } from '@ma
 import { Skeleton } from '@material-ui/lab';
 import { useStyles } from './Settings.styles';
 import store from '@utils/Store';
-import { setPrimaryColor, setAccentColor, toggleTheme } from '@actions/ThemeColor';
+import { setPrimaryColor, setAccentColor, toggleDark } from '@reducers/ThemeColor';
 
 export const colors = ['purple', 'amber', 'red', 'blue', 'indigo', 'green'];
 
@@ -30,7 +30,7 @@ export default function Settings() {
     }
 
     function switchTheme() {
-        store.dispatch(toggleTheme());
+        store.dispatch(toggleDark());
     }
 
     return (

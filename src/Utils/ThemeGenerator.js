@@ -1,7 +1,7 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import * as materialColors from '@material-ui/core/colors';
 
-export function createTheme({primary, accent, type}) {
+export function createTheme({ primary, accent, type }) {
   return responsiveFontSizes(createMuiTheme({
     palette: {
       type: type,

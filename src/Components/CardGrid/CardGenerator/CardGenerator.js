@@ -33,8 +33,8 @@ export default function GridCard(props) {
 function createCardAction({ type, icon, label }) {
     switch (type) {
         case 'link': return (
-            <Link variant="caption" style={{ "display": "flex" }}>
-                <Icon color="error" className={icon} fontSize="small" style={{ "padding": "0 5px" }} />{" "}
+            <Link variant="caption" style={{ "display": "flex" }} component="a" >
+                <Icon color="error" className={icon} fontSize="small" style={{ padding: "0 5px", marginRight: 5, }} />
                 {label}
             </Link>
         )
@@ -47,9 +47,8 @@ function createCardAction({ type, icon, label }) {
                 <Icon
                     fontSize="small"
                     className={icon}
-                    style={{ "padding": "0 5px" }}
-                />{" "}
-                {label}
+                    style={{ "padding": "0 5px", marginRight: 5, }}
+                />{label}
             </Typography>
         )
     }
