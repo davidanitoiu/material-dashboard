@@ -8,7 +8,6 @@
         "@components/*": ["./Components"],
         "@images/*": ["./Resources/Images/*"],
         "@json/*": ["./Resources/json/*"],
-        "@app/*":["./App"],
         "@styles/*":["./Styles"],
         "@utils/*":["./Utils"],
         "@actions/*":["./Utils/Actions"],

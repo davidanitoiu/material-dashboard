@@ -38,6 +38,7 @@
     "coveragePathIgnorePatterns": [
       "<rootDir>/src/index.js",
       "<rootDir>/src/serviceWorker.js",
+      "<rootDir>/src/App.js",
       "<rootDir>/src/Utils/FontAwesomeWrapper.js"
     ]
   },
@@ -62,6 +63,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "jest-enzyme": "^7.1.2",
-    "react-test-renderer": "^16.12.0"
+    "react-test-renderer": "^16.12.0",
+    "tsutils": "^3.17.1"
   }
 }
