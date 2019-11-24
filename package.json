@@ -29,7 +29,13 @@
     "start": "cra-alias start",
     "build": "cra-alias build",
     "test": "cra-alias test --runInBand",
+    "coverage": "cra-alias test --coverage",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^24.0.23",
     "cra-alias": "^4.13.19",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
