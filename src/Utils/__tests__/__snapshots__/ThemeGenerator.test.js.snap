@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThemeGenerator Create Theme When all variables are provided, a new theme is created #themeColors 1`] = `
+exports[`ThemeGenerator -> Create Theme -> When all variables are provided, a new theme is created #themeColors 1`] = `
 Object {
   "breakpoints": Object {
     "between": [Function],
@@ -350,11 +350,11 @@ Object {
 }
 `;
 
-exports[`ThemeGenerator Create Theme When variables are missing, an error occurs #themeColors 1`] = `"Cannot destructure property \`primary\` of 'undefined' or 'null'."`;
+exports[`ThemeGenerator -> Create Theme -> When variables are missing, an error occurs #themeColors 1`] = `"Cannot destructure property \`primary\` of 'undefined' or 'null'."`;
 
-exports[`ThemeGenerator Create Theme When variables are missing, an error occurs #themeColors 2`] = `"Cannot read property '400' of undefined"`;
+exports[`ThemeGenerator -> Create Theme -> When variables are missing, an error occurs #themeColors 2`] = `"Cannot read property '400' of undefined"`;
 
-exports[`ThemeGenerator Generate Material Palette When a color is passed, a palette is generated #themeColors 1`] = `
+exports[`ThemeGenerator -> Generate Material Palette -> When a color is passed, a palette is generated #themeColors 1`] = `
 Object {
   "breakpoints": Object {
     "between": [Function],
@@ -636,4 +636,4 @@ Object {
 }
 `;
 
-exports[`ThemeGenerator Generate Material Palette When a color is passed, a palette is generated #themeColors 2`] = `"received is not a function"`;
+exports[`ThemeGenerator -> Generate Material Palette -> When a color is passed, a palette is generated #themeColors 2`] = `"received is not a function"`;

@@ -8,10 +8,7 @@ export const initialState = {
     },
 }
 
-function toggleType(type) {
-    return type === 'dark' ? 'light' : 'dark';
-}
-
+const changeMode = mode => mode === 'dark' ? 'light' : 'dark';
 export const setPrimaryColor = createAction('themeColor/setPrimary');
 export const setAccentColor = createAction('themeColor/setAccent');
 export const toggleDark = createAction('themeColor/toggle');
@@ -19,7 +16,7 @@ export const toggleDark = createAction('themeColor/toggle');
 const themeReducer = createReducer(initialState, {
     [setPrimaryColor]: (state, { payload }) => { state.primary = payload },
     [setAccentColor]: (state, { payload }) => { state.accent = payload },
-    [toggleDark]: state => { state.type = toggleType(state.type)},
+    [toggleDark]: state => { state.type = changeMode(state.type) },
 });
 
 export default themeReducer;
