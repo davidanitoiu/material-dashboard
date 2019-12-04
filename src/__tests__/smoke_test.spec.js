@@ -13,7 +13,7 @@ describe('Smoke Tests -> ', function () {
   afterEach(async function () {
     await driver.quit();
   })
-  it('When page loads, go to settings, toggle dark theme, change primary color and secondary color #smokeTest', async function () {
+  it('When page loads, go to settings, toggle dark theme, change primary color and secondary color     #smokeTest', async function () {
     await driver.get("http://localhost:3000/dashboard")
     await driver.findElement(By.css(".fa-cog")).click()
     await driver.findElement(By.xpath("(//input[@value=''])[2]")).click()
