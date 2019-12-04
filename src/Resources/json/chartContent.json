@@ -1,0 +1,41 @@
+[
+  {
+    "icon": "fas fa-clone",
+    "color": "amber",
+    "colorVariant": "dark",
+    "title": "Used Space",
+    "value": "49/50",
+    "unit": "GB",
+    "action": {
+      "type": "text",
+      "icon": "far fa-clock",
+      "label": "Last 24 hours"
+    }
+  },
+  {
+    "icon": "fas fa-shopping-cart",
+    "color": "green",
+    "colorVariant": "main",
+    "title": "Revenue",
+    "value": "$34,245",
+    "unit": "",
+    "action": {
+      "type": "text",
+      "icon": "far fa-clock",
+      "label": "Last 24 hours"
+    }
+  },
+  {
+    "icon": "fas fa-info-circle",
+    "color": "red",
+    "colorVariant": "main",
+    "title": "Fixed issues",
+    "value": "75",
+    "unit": "",
+    "action": {
+      "type": "text",
+      "icon": "far fa-clock",
+      "label": "Tracked from Github"
+    }
+  }
+]
