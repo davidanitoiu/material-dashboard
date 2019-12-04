@@ -1,5 +1,5 @@
 import React from 'react';
-import SiteContent from '@components/SiteContent/SiteContent';
+import SiteContent from '@components/Layout/SiteContent';
 
 export default function Icons() {
     return (

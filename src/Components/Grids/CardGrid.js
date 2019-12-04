@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import useStyles from './CardGrid.styles';
-import GridCard from './CardGenerator/CardGenerator.js';
+import AvatarCard from '@components/Cards/AvatarCard';
 
 export default function CardGrid(props) {
     const classes = useStyles();
@@ -9,7 +9,7 @@ export default function CardGrid(props) {
     return (
         <Grid className={classes.cardContainer}>
             {props.dataContent.map((card, i) => (
-                <GridCard key={i} dataContent={card} />
+                <AvatarCard key={i} dataContent={card} />
             ))}
         </Grid>
     )

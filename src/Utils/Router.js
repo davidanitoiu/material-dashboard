@@ -12,7 +12,7 @@ import Notifications from '@pages/Notifications';
 import Profile from '@pages/Profile';
 import TableList from '@pages/TableList';
 import Typography from '@pages/Typography';
-import Sidebar from '@components/Sidebar/Sidebar';
+import Sidebar from '@components/Layout/Sidebar';
 
 export default class Router extends Component {
     render() {

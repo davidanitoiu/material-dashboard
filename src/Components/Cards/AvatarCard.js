@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container, Card, CardContent, CardActions, Typography, Icon, Avatar, Link } from '@material-ui/core';
+import { Container, Card, CardContent, CardActions, Typography, Icon, Avatar } from '@material-ui/core';
 import { material } from '@utils/ThemeGenerator';
 import Color from 'color';
-import useStyles from '../CardGrid.styles';
+import useStyles from './AvatarCard.styles';
+import {createCardAction} from '@utils/CardUtils/createCardAction';
 
-export default function GridCard(props) {
+export default function AvatarCard(props) {
     const { color, colorVariant, icon, title, value, unit, action } = props.dataContent;
     const classes = useStyles();
 
@@ -28,29 +29,3 @@ export default function GridCard(props) {
         </Card>
     )
 }
-
-
-function createCardAction({ type, icon, label }) {
-    switch (type) {
-        case 'link': return (
-            <Link variant="caption" style={{ "display": "flex" }} component="a" >
-                <Icon color="error" className={icon} fontSize="small" style={{ padding: "0 5px", marginRight: 5, }} />
-                {label}
-            </Link>
-        )
-        default: return (
-            <Typography
-                color="textSecondary"
-                variant="caption"
-                style={{ "display": "flex" }}
-            >
-                <Icon
-                    fontSize="small"
-                    className={icon}
-                    style={{ "padding": "0 5px", marginRight: 5, }}
-                />{label}
-            </Typography>
-        )
-    }
-
-};

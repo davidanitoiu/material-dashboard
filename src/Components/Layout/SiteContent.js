@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TopBar from '@components/TopBar/TopBar';
-import Settings from '@components/Settings/Settings';
+import TopBar from '@components/Layout/TopBar';
+import Settings from '@components/Layout/Settings';
 import { connect } from 'react-redux';
 
 class SiteContent extends Component {
@@ -9,7 +9,9 @@ class SiteContent extends Component {
             <React.Fragment>
                 <TopBar title={this.props.title} />
                 <Settings />
-                {this.props.children}
+                <div style={{ paddingLeft: 240 }}>
+                    {this.props.children}
+                </div>
             </React.Fragment >
         );
     }
