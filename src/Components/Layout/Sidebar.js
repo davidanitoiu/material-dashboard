@@ -4,7 +4,7 @@ import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import sidebarTheme from './Sidebar.styles';
 import menuList from '@data/menuList.json';
 import { useHistory, Link } from "react-router-dom";
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { createTheme } from '@utils/ThemeGenerator';
 
 const useStyles = makeStyles({
@@ -13,8 +13,9 @@ const useStyles = makeStyles({
     }
 })
 
-function Sidebar(props) {
-    const theme = createTheme(props.themeColor);
+function Sidebar() {
+    const themeColor = useSelector(state => state.themeColor)
+    const theme = createTheme(themeColor);
     const classes = useStyles();
     const history = useHistory();
 
@@ -48,5 +49,4 @@ function Sidebar(props) {
     )
 }
 
-const mapStateToProps = theme => theme;
-export default connect(mapStateToProps)(Sidebar);
+export default Sidebar;
