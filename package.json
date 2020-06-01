@@ -26,7 +26,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build"
+    "build": "craco build",
+    "serve": "npx serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
