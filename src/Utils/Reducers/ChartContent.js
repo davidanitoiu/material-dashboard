@@ -1,4 +1,4 @@
-import chartContent from '@json/chartContent.json';
+import chartContent from '@json/chartContent.js';
 
 export const initialState = {
     chartContent: [...chartContent]
