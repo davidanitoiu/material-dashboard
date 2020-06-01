@@ -1,10 +1,4 @@
-import React, { Component } from "react";
-import {
-    BrowserRouter,
-    Switch,
-    Route,
-    Redirect
-} from "react-router-dom";
+import Sidebar from '@components/Layout/Sidebar';
 import Dashboard from '@pages/Dashboard';
 import Icons from '@pages/Icons';
 import Maps from '@pages/Maps';
@@ -12,7 +6,8 @@ import Notifications from '@pages/Notifications';
 import Profile from '@pages/Profile';
 import TableList from '@pages/TableList';
 import Typography from '@pages/Typography';
-import Sidebar from '@components/Layout/Sidebar';
+import React from "react";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 const Router = ({ children }) => (
     <BrowserRouter>
