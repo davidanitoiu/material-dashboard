@@ -1,6 +1,6 @@
 import React from 'react';
-import { Notifications, Dashboard, AccountCircle, Search } from '@material-ui/icons';
 import { Container, Typography, AppBar, Toolbar, IconButton, InputBase, InputAdornment, Badge, Menu, MenuItem, Divider } from '@material-ui/core';
+import { MdDashboard, MdNotifications, MdAccountCircle, MdSearch } from 'react-icons/md';
 import useStyles from './TopBar.styles';
 
 const notifications = [
@@ -36,21 +36,21 @@ function TopBar(props) {
                             inputProps={{ 'aria-label': 'search' }}
                             startAdornment={
                                 <InputAdornment position="start">
-                                    <Search color="primary" />
+                                    <MdSearch />
                                 </InputAdornment>
                             }
                         />
                     </Container>
                     <IconButton edge="end" color="primary" aria-label="dashboard">
-                        <Dashboard />
+                        <MdDashboard />
                     </IconButton>
                     <IconButton edge="end" color="primary" aria-label="notifications" aria-haspopup="true" onClick={handleClick} aria-controls="notification-menu">
                         <Badge badgeContent={5} color="error">
-                            <Notifications />
+                            <MdNotifications />
                         </Badge>
                     </IconButton>
                     <IconButton edge="end" color="primary" aria-label="profile" aria-haspopup="true" onClick={handleClick} aria-controls="profile-menu">
-                        <AccountCircle />
+                        <MdAccountCircle />
                     </IconButton>
                     <Menu
                         id="notification-menu"
