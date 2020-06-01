@@ -4,7 +4,7 @@ import ChartCard from '@components/Cards/ChartCard';
 import useStyles from './ChartGrid.styles';
 import { useSelector } from 'react-redux';
 
-function ChartGrid(props) {
+function ChartGrid() {
     const chartContent = useSelector(state => state.chartContent)
     const classes = useStyles();
 
