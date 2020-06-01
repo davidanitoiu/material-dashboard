@@ -20,6 +20,3 @@ export default makeStyles(theme => ({
         boxShadow: ({ color, colorVariant }) => `0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px ${Color(material(color).palette.primary[colorVariant]).alpha(.4)}`,
     }
 }));
-
-
-

@@ -33,6 +33,3 @@ export default makeStyles(({
         borderTop: '1px solid #bdbdbd'
     }
 }));
-
-
-

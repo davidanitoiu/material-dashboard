@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import { themeColor,cardContent,chartContent } from './reducers';
+import { themeColor, cardContent, chartContent } from './reducers';
 import { reduxBatch } from '@manaflair/redux-batch';
 
 const reducer = combineReducers({
