@@ -20,7 +20,7 @@ export default [
     },
     "action": {
       "type": "text",
-      "icon": "far fa-clock",
+      "icon": "FaClock",
       "label": "Last 24 hours"
     }
   },
@@ -47,7 +47,7 @@ export default [
     },
     "action": {
       "type": "text",
-      "icon": "far fa-clock",
+      "icon": "FaClock",
       "label": "Last 24 hours"
     }
   },
@@ -79,7 +79,7 @@ export default [
     },
     "action": {
       "type": "text",
-      "icon": "far fa-clock",
+      "icon": "FaClock",
       "label": "Tracked from Github"
     }
   }

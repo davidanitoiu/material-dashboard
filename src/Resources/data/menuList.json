@@ -1,37 +1,37 @@
 [
   {
     "title": "Dashboard",
-    "icon": "fa fa-calculator",
+    "icon": "MdDashboard",
     "path": "/dashboard"
   },
   {
     "title": "User Profile",
-    "icon": "fa fa-user-circle",
+    "icon": "FaUserCircle",
     "path": "/profile"
   },
   {
     "title": "Table List",
-    "icon": "fa fa-clipboard",
+    "icon": "FaClipboard",
     "path": "/tablelist"
   },
   {
     "title": "Typography",
-    "icon": "fa fa-pen",
+    "icon": "FaPen",
     "path": "/typography"
   },
   {
     "title": "Icons",
-    "icon": "fa fa-icons",
+    "icon": "FaIcons",
     "path": "/icons"
   },
   {
     "title": "Maps",
-    "icon": "fa fa-map-marked",
+    "icon": "FaMapMarked",
     "path": "/maps"
   },
   {
     "title": "Notifications",
-    "icon": "fa fa-bell",
+    "icon": "FaBell",
     "path": "/notifications"
   }
 ]

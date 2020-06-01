@@ -20,7 +20,7 @@ export default function ChartCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <CardAction action={action} />
+                <CardAction {...action} />
             </CardActions>
         </Card >
     )

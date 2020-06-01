@@ -1,11 +1,12 @@
 import React from 'react';
-import { Drawer, List, ListItem, Divider, ListItemIcon, ListItemText, Icon, MenuItem } from '@material-ui/core';
+import { Drawer, List, ListItem, Divider, ListItemText, MenuItem } from '@material-ui/core';
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import sidebarTheme from './Sidebar.styles';
 import menuList from '@data/menuList.json';
 import { useHistory, Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { createTheme } from '@utils/ThemeGenerator';
+import SidebarIcon from '../SidebarIcon';
 
 const useStyles = makeStyles({
     drawerPaper: {
@@ -39,7 +40,7 @@ function Sidebar() {
                             to={path}
                             selected={history.location.pathname === path}
                             style={{ margin: 10 }}>
-                            <ListItemIcon><Icon className={icon} /></ListItemIcon>
+                            <SidebarIcon icon={icon} />
                             <ListItemText color="secondary" primary={title} />
                         </MenuItem>
                     ))}
