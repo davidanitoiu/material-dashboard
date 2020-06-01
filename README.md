@@ -1,26 +1,18 @@
 # Description
-A basic template for dashboard layouts built with ReactJS.
 
-# Tests
-```bash
-npm test
-```
+A clone of the [Material Dashboard](https://www.creative-tim.com/product/material-dashboard-react)
+And a work in progress :)
 
-# Start
+## Start
+
 ```bash
 npm start
 ```
 
-# Configuration
-Filepaths are defined with cra-alias, since babel support is complicated.
+## Configuration
+
 Modify the jsconfig.json file to set up your own routes.
 
-**!!!IMPORTANT!!!** 
+## Data imports
 
-Update your package.json to use `cra-alias` instead of `react-native`
-
-# Update Theme Color
-The theme color is configured in `./src/App/App.styles.js` of the project directory.
-
-# Data imports
-Data is currently held locally in `./src/Resources/json`
+Data is currently held locally in `./src/Resources/data`
