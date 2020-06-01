@@ -11,23 +11,13 @@ const notifications = [
     "Another one",
 ];
 
-function isMenuActive(anchorEl, menuName) {
-    return (!anchorEl)
-        ? false
-        : (anchorEl.getAttribute('aria-controls') === menuName)
-}
-
-export default function TopBar(props) {
+function TopBar(props) {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
 
-    const handleClick = event => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
+    const isMenuActive = (anchorEl, menuName) => (!anchorEl) ? false : (anchorEl.getAttribute('aria-controls') === menuName)
+    const handleClick = ({ currentTarget }) => setAnchorEl(currentTarget);
+    const handleClose = () => setAnchorEl(null);
 
     return (
         <AppBar position="static" className={classes.appBar}>
@@ -96,3 +86,5 @@ export default function TopBar(props) {
         </AppBar>
     )
 }
+
+export default TopBar;
