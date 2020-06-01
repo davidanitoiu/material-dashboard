@@ -2,10 +2,11 @@ import React from 'react';
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Router from '@utils/Router';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { createTheme } from '@utils/ThemeGenerator';
 
-function App({themeColor}) {
+function App() {
+  const themeColor = useSelector(state => state.themeColor);
   const theme = createTheme(themeColor);
 
   return (
@@ -16,6 +17,4 @@ function App({themeColor}) {
   );
 };
 
-const mapStateToProps = theme => theme;
-
-export default connect(mapStateToProps)(App);
+export default App

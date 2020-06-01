@@ -2,7 +2,7 @@ import React from 'react';
 import { Drawer, List, ListItem, Divider, ListItemIcon, ListItemText, Icon, MenuItem } from '@material-ui/core';
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import sidebarTheme from './Sidebar.styles';
-import menuList from '@json/menuList.json';
+import menuList from '@data/menuList.json';
 import { useHistory, Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { createTheme } from '@utils/ThemeGenerator';

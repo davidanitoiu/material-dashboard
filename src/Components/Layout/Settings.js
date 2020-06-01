@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { Fab, Menu, Typography, CardContent, Container, Switch } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
 import { useStyles } from './Settings.styles';
-import store from '@utils/Store';
+import store from '@utils/store';
 import { setPrimaryColor, setAccentColor, toggleDark } from '@reducers/ThemeColor';
 import { FaCog } from 'react-icons/fa';
 
