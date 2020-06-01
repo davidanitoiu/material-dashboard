@@ -60,7 +60,7 @@ export default function Settings() {
                         <Typography variant="subtitle2" align="center">Theme Color</Typography>
                         <Container style={{ display: 'inline-flex', justifyContent: 'space-around', margin: 10 }}>
                             {colors.map((color) => (
-                                <Skeleton key={color} component="button" disableAnimate={true} variant="circle" width={24} height={24} className={clsx(classes.circle, classes[color])} onClick={changePrimaryColor.bind(this, color)} />
+                                <Skeleton key={color} component="button" variant="circle" width={24} height={24} className={clsx(classes.circle, classes[color])} onClick={changePrimaryColor.bind(this, color)} />
                             ))}
                         </Container>
                     </Container>
@@ -68,7 +68,7 @@ export default function Settings() {
                         <Typography variant="subtitle2" align="center">Accent Color</Typography>
                         <Container style={{ display: 'inline-flex', justifyContent: 'space-around', margin: 10 }}>
                             {colors.map((color) => (
-                                <Skeleton key={color} component="button" disableAnimate={true} variant="circle" width={24} height={24} className={clsx(classes.circle, classes[color])} onClick={changeAccentColor.bind(this, color)} />
+                                <Skeleton key={color} component="button" variant="circle" width={24} height={24} className={clsx(classes.circle, classes[color])} onClick={changeAccentColor.bind(this, color)} />
                             ))}
                         </Container>
                     </Container>

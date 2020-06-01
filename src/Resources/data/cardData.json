@@ -1,6 +1,6 @@
 [
   {
-    "icon": "fas fa-clone",
+    "icon": "FaClone",
     "color": "amber",
     "colorVariant": "dark",
     "title": "Used Space",
@@ -8,12 +8,12 @@
     "unit": "GB",
     "action": {
       "type": "link",
-      "icon": "fas fa-exclamation-triangle",
+      "icon": "FaExclamationTriangle",
       "label": "Get more space"
     }
   },
   {
-    "icon": "fas fa-shopping-cart",
+    "icon": "FaShoppingCart",
     "color": "green",
     "colorVariant": "main",
     "title": "Revenue",
@@ -21,12 +21,12 @@
     "unit": "",
     "action": {
       "type": "text",
-      "icon": "fa fa-calendar-alt",
+      "icon": "FaCalendarAlt",
       "label": "Last 24 hours"
     }
   },
   {
-    "icon": "fas fa-info-circle",
+    "icon": "FaInfoCircle",
     "color": "red",
     "colorVariant": "main",
     "title": "Fixed issues",
@@ -34,12 +34,12 @@
     "unit": "",
     "action": {
       "type": "text",
-      "icon": "fa fa-tag",
+      "icon": "FaTag",
       "label": "Tracked from Github"
     }
   },
   {
-    "icon": "fas fa-child",
+    "icon": "FaChild",
     "color": "cyan",
     "colorVariant": "main",
     "title": "Followers",
@@ -47,7 +47,7 @@
     "unit": "",
     "action": {
       "type": "text",
-      "icon": "fa fa-history",
+      "icon": "FaHistory",
       "label": "Just Update"
     }
   }

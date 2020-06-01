@@ -1,22 +1,17 @@
-import React from 'react';
 import { Card, CardActionArea, CardActions, CardContent } from '@material-ui/core';
-import { createCardAction } from './Helpers/createCardAction';
+import React from 'react';
 import ChartistGraph from 'react-chartist';
-import Color from 'color';
 import useStyles from './ChartCard.styles';
-import { material } from '@utils/ThemeGenerator';
+import CardAction from '../CardAction';
 
 export default function ChartCard(props) {
     const { graph, action, color, colorVariant } = props.dataContent;
-    const classes = useStyles();
+    const classes = useStyles({ color, colorVariant });
 
     return (
         <Card className={classes.card}>
             <CardActionArea>
-                <CardContent style={{
-                    backgroundColor: material(color).palette.primary[colorVariant],
-                    boxShadow: `0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px ${Color(material(color).palette.primary[colorVariant]).alpha(.4)}`,
-                }}>
+                <CardContent className={classes.content}>
                     <ChartistGraph
                         className={"ct-octave"}
                         data={graph.data}
@@ -25,7 +20,7 @@ export default function ChartCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                {createCardAction(action)}
+                <CardAction action={action} />
             </CardActions>
         </Card >
     )
