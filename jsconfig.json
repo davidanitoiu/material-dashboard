@@ -1,8 +1,5 @@
 {
-    "typeAcquisition": { 
-      "include": [ "jest" ] 
-    },
-    "compilerOptions": {
+   "compilerOptions": {
       "baseUrl": "src",
       "paths": {
         "@components/*": ["./Components"],
