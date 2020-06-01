@@ -1,26 +1,17 @@
 import React from 'react';
-import { Card, CardActionArea, CardActions, Grid } from '@material-ui/core';
-import { createCardAction } from '@utils/CardUtils/createCardAction';
-import { makeStyles } from '@material-ui/styles';
-
-const useStyles = makeStyles(theme => {});
+import { Grid } from '@material-ui/core';
+import ChartCard from '@components/Cards/ChartCard';
+import useStyles from './ChartGrid.styles';
 
 function ChartGrid(props) {
     const classes = useStyles();
+
     return (
         <Grid className={classes.cardContainer}>
             {props.dataContent.map((card, i) => (
-                <Card key={i} dataContent={card}>
-                    <CardActionArea>
-
-                    </CardActionArea>
-                    <CardActions>
-                        {createCardAction(card.action)}
-                    </CardActions>
-                </Card>
+                <ChartCard key={i} dataContent={card}/>
             ))}
         </Grid>
-
     )
 }
 
