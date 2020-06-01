@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
-import TopBar from '@components/Layout/TopBar';
 import Settings from '@components/Layout/Settings';
-import { connect } from 'react-redux';
+import TopBar from '@components/Layout/TopBar';
+import React from 'react';
 
-class SiteContent extends Component {
-    render() {
-        return (
-            <React.Fragment>
-                <TopBar title={this.props.title} />
-                <Settings />
-                <div style={{ paddingLeft: 240 }}>
-                    {this.props.children}
-                </div>
-            </React.Fragment >
-        );
-    }
-}
+const SiteContent = ({ title, children }) => (
+    <>
+        <TopBar title={title} />
+        <Settings />
+        <div style={{ paddingLeft: 240 }}>
+            {children}
+        </div>
+    </ >
+)
 
-export default connect()(SiteContent);
+export default SiteContent;
