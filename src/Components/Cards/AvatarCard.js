@@ -3,7 +3,7 @@ import { Container, Card, CardContent, CardActions, Typography, Icon, Avatar } f
 import { material } from '@utils/ThemeGenerator';
 import Color from 'color';
 import useStyles from './AvatarCard.styles';
-import {createCardAction} from '@utils/CardUtils/createCardAction';
+import {createCardAction} from './Helpers/createCardAction';
 
 export default function AvatarCard(props) {
     const { color, colorVariant, icon, title, value, unit, action } = props.dataContent;
