@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import { Fab, Menu, Typography, CardContent, Container, Switch } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
 import { useStyles } from './Settings.styles';
-import store from '@utils/store';
-import { setPrimaryColor, setAccentColor, toggleDark } from '@reducers/ThemeColor';
+import store from '@store';
+import { setPrimaryColor, setAccentColor, toggleDark } from '@store/reducers';
 import { FaCog } from 'react-icons/fa';
 
 export const colors = ['purple', 'amber', 'red', 'blue', 'indigo', 'green'];

@@ -1,4 +1,4 @@
-import chartData from 'Resources/data/chartData.js';
+import chartData from '@data/chartData';
 import { createReducer } from "@reduxjs/toolkit"
 
 export const initialState = [ ...chartData ]

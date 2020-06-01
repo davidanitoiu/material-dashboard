@@ -5,7 +5,7 @@ import sidebarTheme from './Sidebar.styles';
 import menuList from '@data/menuList.json';
 import { useHistory, Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
-import { createTheme } from '@utils/ThemeGenerator';
+import { createTheme } from '@utils/generators';
 import SidebarIcon from '../SidebarIcon';
 
 const useStyles = makeStyles({

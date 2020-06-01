@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListItemIcon } from '@material-ui/core';
-import { generateIcon } from '@utils/IconGenerator';
+import { generateIcon } from '@utils/generators';
 
 const SidebarIcon = ({ icon }) => {
     const Icon = generateIcon(icon);

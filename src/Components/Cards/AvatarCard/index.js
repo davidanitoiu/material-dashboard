@@ -2,7 +2,7 @@ import { Avatar, Card, CardActions, CardContent, Typography } from '@material-ui
 import React from 'react';
 import useStyles from './AvatarCard.styles';
 import CardAction from '../CardAction';
-import { generateIcon } from '@utils/IconGenerator';
+import { generateIcon } from '@utils/generators';
 
 export default function AvatarCard(props) {
     const { color, colorVariant, icon, title, value, unit, action } = props.dataContent;

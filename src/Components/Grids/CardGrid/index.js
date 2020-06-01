@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import useStyles from './CardGrid.styles';
-import AvatarCard from '@components/Cards/AvatarCard';
+import { AvatarCard } from '@components/cards';
 import { useSelector } from 'react-redux';
 
 export default function CardGrid() {

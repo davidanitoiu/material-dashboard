@@ -1,5 +1,5 @@
 import React from 'react';
-import SiteContent from '@components/Layout/SiteContent';
+import { SiteContent } from '@components/layout';
 
 export default function Notifications() {
     return (

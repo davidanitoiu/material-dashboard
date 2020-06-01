@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/styles';
-import { material } from '@utils/ThemeGenerator';
+import { material } from '@utils/generators';
 
 export const useStyles = makeStyles(theme => ({
     fab: {

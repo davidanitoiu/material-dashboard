@@ -1,5 +1,5 @@
 import { Link, makeStyles, Typography } from '@material-ui/core';
-import { generateIcon } from '@utils/IconGenerator';
+import { generateIcon } from '@utils/generators';
 import React from 'react';
 
 const useStyles = makeStyles(theme => ({

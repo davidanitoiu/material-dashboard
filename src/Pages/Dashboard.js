@@ -1,26 +1,18 @@
+import { CardGrid, ChartGrid } from '@components/grids';
+import { SiteContent } from '@components/layout';
 import React from 'react';
-import SiteContent from '@components/Layout/SiteContent';
-import CardGrid from '@components/Grids/CardGrid';
-import { connect } from 'react-redux';
-import ChartGrid from 'Components/Grids/ChartGrid';
+import { useSelector } from 'react-redux';
 
 
 function Dashboard(props) {
+    const { cardContent, chartContent } = useSelector(state => state);
 
     return (
         <SiteContent title="Dashboard" >
-            <CardGrid dataContent={props.cardContent} />
-            <ChartGrid dataContent={props.chartContent} />
+            <CardGrid dataContent={cardContent} />
+            <ChartGrid dataContent={chartContent} />
         </SiteContent>
     )
 }
 
-
-const mapStateToProps = state => {
-    return { 
-        cardContent: state.cardContent,
-        chartContent: state.chartContent
-     };
-};
-
-export default connect(mapStateToProps)(Dashboard);
+export default Dashboard;

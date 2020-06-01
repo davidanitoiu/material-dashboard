@@ -1,4 +1,4 @@
-import Sidebar from '@components/Layout/Sidebar';
+import { Sidebar } from '@components/layout';
 import Dashboard from '@pages/Dashboard';
 import Icons from '@pages/Icons';
 import Maps from '@pages/Maps';

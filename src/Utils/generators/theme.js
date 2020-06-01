@@ -21,4 +21,3 @@ export const material = color => createMuiTheme({
     primary: materialColors[color],
   }
 });
-

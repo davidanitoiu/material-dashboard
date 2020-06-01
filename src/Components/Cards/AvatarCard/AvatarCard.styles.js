@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { material } from '@utils/ThemeGenerator';
+import { material } from '@utils/generators';
 import Color from 'color';
 
 export default makeStyles(({

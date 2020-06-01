@@ -1,5 +1,4 @@
-import Settings from '@components/Layout/Settings';
-import TopBar from '@components/Layout/TopBar';
+import { Settings, TopBar } from '@components/layout';
 import React from 'react';
 
 const SiteContent = ({ title, children }) => (

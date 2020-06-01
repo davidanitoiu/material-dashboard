@@ -6,3 +6,5 @@ const Map = () => (
         <MapChart />
     </div>
 )
+
+export default Map;

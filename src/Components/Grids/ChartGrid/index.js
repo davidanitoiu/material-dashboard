@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import ChartCard from '@components/Cards/ChartCard';
+import { ChartCard } from '@components/cards';
 import useStyles from './ChartGrid.styles';
 import { useSelector } from 'react-redux';
 

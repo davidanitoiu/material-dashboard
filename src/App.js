@@ -3,7 +3,7 @@ import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Router from '@utils/Router';
 import { useSelector } from 'react-redux';
-import { createTheme } from '@utils/ThemeGenerator';
+import { createTheme } from '@utils/generators';
 
 function App() {
   const themeColor = useSelector(state => state.themeColor);
