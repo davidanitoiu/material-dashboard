@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Fab, Icon, Menu, Typography, CardContent, Container, Switch } from '@material-ui/core';
+import { Fab, Menu, Typography, CardContent, Container, Switch } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
 import { useStyles } from './Settings.styles';
 import store from '@utils/Store';
 import { setPrimaryColor, setAccentColor, toggleDark } from '@reducers/ThemeColor';
+import { FaCog } from 'react-icons/fa';
 
 export const colors = ['purple', 'amber', 'red', 'blue', 'indigo', 'green'];
 
@@ -36,7 +37,7 @@ export default function Settings() {
     return (
         <React.Fragment>
             <Fab aria-label="settings" className={classes.fab} onClick={handleClick} aria-haspopup="true" aria-controls="settings">
-                <Icon className="fas fa-cog" />
+                <FaCog />
             </Fab>
             <Menu
                 id="settings"
