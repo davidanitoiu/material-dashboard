@@ -3,7 +3,7 @@ import { Drawer, List, ListItem, Divider, ListItemText, MenuItem } from '@materi
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import sidebarTheme from './Sidebar.styles';
 import menuList from '@data/menuList.json';
-import { useHistory, Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { createTheme } from '@utils/generators';
 import SidebarIcon from '../SidebarIcon';
@@ -18,7 +18,7 @@ function Sidebar() {
     const themeColor = useSelector(state => state.themeColor)
     const theme = createTheme(themeColor);
     const classes = useStyles();
-    const history = useHistory();
+    const location = useLocation();
 
     return (
         <ThemeProvider theme={sidebarTheme(theme)}>
@@ -38,7 +38,7 @@ function Sidebar() {
                             key={i}
                             component={Link}
                             to={path}
-                            selected={history.location.pathname === path}
+                            selected={location.pathname === path}
                             style={{ margin: 10 }}>
                             <SidebarIcon icon={icon} />
                             <ListItemText color="secondary" primary={title} />
