@@ -20,14 +20,13 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
     "react-simple-maps": "^2.1.2",
-    "redux": "^4.0.5",
-    "@craco/craco": "^5.6.4",
-    "craco-alias": "^2.1.1"
+    "redux": "^4.0.5"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "serve": "npx serve -s build"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,5 +44,6 @@
     ]
   },
   "devDependencies": {
+    "react-app-rewired": "^2.1.6"
   }
 }

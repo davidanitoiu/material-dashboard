@@ -1,13 +1,3 @@
 {
-   "compilerOptions": {
-      "baseUrl": "src",
-      "paths": {
-        "@components/*": ["./components"],
-        "@images/*": ["./images/*"],
-        "@data/*": ["./data/*"],
-        "@utils/*":["./utils"],
-        "@store/*":["./store"],
-        "@pages/*":["./pages"]
-      }
-    }
-  }
+  "extends": "./jsconfig.paths.json"
+}
