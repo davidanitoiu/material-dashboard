@@ -6,13 +6,13 @@ And a work in progress :)
 ## Start
 
 ```bash
-npm start
+npm run start
 ```
 
 ## Configuration
 
-Modify the jsconfig.json file to set up your own routes.
+Modify the jsconfig.json file to set up your own path alias.
 
 ## Data imports
 
-Data is currently held locally in `./src/Resources/data`
+Data is currently held locally in `./src/data`
