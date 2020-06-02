@@ -10,7 +10,7 @@ import React from "react";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 const Router = ({ children }) => (
-    <BrowserRouter>
+    <BrowserRouter basename="/material-dashboard">
         <Sidebar />
         {children}
         <Switch>
