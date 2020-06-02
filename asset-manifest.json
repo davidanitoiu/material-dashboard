@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/material-dashboard/static/css/main.34de6062.chunk.css",
-    "main.js": "/material-dashboard/static/js/main.628c88ab.chunk.js",
-    "main.js.map": "/material-dashboard/static/js/main.628c88ab.chunk.js.map",
+    "main.js": "/material-dashboard/static/js/main.5ea05982.chunk.js",
+    "main.js.map": "/material-dashboard/static/js/main.5ea05982.chunk.js.map",
     "runtime-main.js": "/material-dashboard/static/js/runtime-main.960eee90.js",
     "runtime-main.js.map": "/material-dashboard/static/js/runtime-main.960eee90.js.map",
     "static/js/2.f2557508.chunk.js": "/material-dashboard/static/js/2.f2557508.chunk.js",
     "static/js/2.f2557508.chunk.js.map": "/material-dashboard/static/js/2.f2557508.chunk.js.map",
     "index.html": "/material-dashboard/index.html",
-    "precache-manifest.c2db17d1579b75e8e380a026d0a53670.js": "/material-dashboard/precache-manifest.c2db17d1579b75e8e380a026d0a53670.js",
+    "precache-manifest.1f45a033951388a8ec12f5ed598bb7b9.js": "/material-dashboard/precache-manifest.1f45a033951388a8ec12f5ed598bb7b9.js",
     "service-worker.js": "/material-dashboard/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/material-dashboard/static/css/main.34de6062.chunk.css.map",
     "static/js/2.f2557508.chunk.js.LICENSE.txt": "/material-dashboard/static/js/2.f2557508.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.960eee90.js",
     "static/js/2.f2557508.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.628c88ab.chunk.js"
+    "static/js/main.5ea05982.chunk.js"
   ]
 }
