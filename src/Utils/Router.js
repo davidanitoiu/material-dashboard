@@ -6,16 +6,16 @@ import Notifications from '@pages/Notifications';
 import Profile from '@pages/Profile';
 import TableList from '@pages/TableList';
 import Typography from '@pages/Typography';
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 const Router = ({ children }) => {
-    const location = window.location;
+    const [basename, setBasename] = useState("");
 
-    console.log({ location });
+    useEffect(() => setBasename(window.location.pathname), [])
 
     return (
-        <BrowserRouter basename="/material-dashboard">
+        <BrowserRouter basename={basename}>
             <Sidebar />
             {children}
             <Switch>
