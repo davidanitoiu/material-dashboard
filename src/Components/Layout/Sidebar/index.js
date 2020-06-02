@@ -7,6 +7,7 @@ import { useLocation, Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { createTheme } from '@utils/generators';
 import SidebarIcon from '../SidebarIcon';
+import { endsWith } from "lodash";
 
 const useStyles = makeStyles({
     drawerPaper: {
@@ -38,7 +39,7 @@ function Sidebar() {
                             key={i}
                             component={Link}
                             to={path}
-                            selected={location.pathname === path}
+                            selected={endsWith(location.pathname, path)}
                             style={{ margin: 10 }}>
                             <SidebarIcon icon={icon} />
                             <ListItemText color="secondary" primary={title} />
