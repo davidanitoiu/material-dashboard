@@ -9,23 +9,29 @@ import Typography from '@pages/Typography';
 import React from "react";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
-const Router = ({ children }) => (
-    <BrowserRouter basename="/material-dashboard">
-        <Sidebar />
-        {children}
-        <Switch>
-            <Route exact path="/"  >
-                <Redirect push to='/dashboard' />
-            </Route>
-            <Route path="/icons" component={Icons} />
-            <Route path="/maps" component={Maps} />
-            <Route path="/notifications" component={Notifications} />
-            <Route path="/profile" component={Profile} />
-            <Route path="/tableList" component={TableList} />
-            <Route path="/typography" component={Typography} />
-            <Route path="/dashboard" component={Dashboard} />
-        </Switch>
-    </BrowserRouter>
-)
+const Router = ({ children }) => {
+    const location = window.location;
+
+    console.log({ location });
+
+    return (
+        <BrowserRouter basename="/material-dashboard">
+            <Sidebar />
+            {children}
+            <Switch>
+                <Route exact path="/"  >
+                    <Redirect push to='/dashboard' />
+                </Route>
+                <Route path="/icons" component={Icons} />
+                <Route path="/maps" component={Maps} />
+                <Route path="/notifications" component={Notifications} />
+                <Route path="/profile" component={Profile} />
+                <Route path="/tableList" component={TableList} />
+                <Route path="/typography" component={Typography} />
+                <Route path="/dashboard" component={Dashboard} />
+            </Switch>
+        </BrowserRouter>
+    )
+}
 
 export default Router;
